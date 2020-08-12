@@ -57,8 +57,8 @@ zone_interest_frame[~region_selection] = [0, 0, 0]
 zone_interest_frame[color_selection & region_selection] = [255, 0, 0]
                     
 # Line dection by color selection and zone of interest / put it in Red color
-line_frame[color_selection & region_selection]  = [255, 0 ,0]
-line_frame[~color_selection]                    = [0, 0 ,0]
+line_frame[color_selection & region_selection]          = [255, 0 ,0]
+line_frame[~(color_selection & region_selection)]       = [0, 0 ,0]
                     
 # Display the result
 plt.figure()
