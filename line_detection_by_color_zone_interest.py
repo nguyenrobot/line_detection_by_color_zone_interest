@@ -68,3 +68,7 @@ plt.imsave('frame_color_selection.png', color_frame)
 plt.figure()
 plt.imshow(line_frame)
 plt.imsave('frame_line_dection.png', line_frame)
+
+plt.figure()
+plt.imshow(zone_interest_frame)
+plt.imsave('frame_zone_of_interest.png', zone_interest_frame)
